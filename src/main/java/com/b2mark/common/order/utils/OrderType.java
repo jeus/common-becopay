@@ -10,7 +10,7 @@ package com.b2mark.common.order.utils;
  * @author jeus
  */
 public enum OrderType {
-    OFFER,
+    ASK,
     BID,
     UNKNOWN;
 }
