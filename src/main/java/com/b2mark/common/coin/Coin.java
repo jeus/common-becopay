@@ -3,9 +3,6 @@
  */
 package com.b2mark.common.coin;
 
-/**
- * @author jeus
- */
  public interface Coin {
 
     public String getName();
@@ -15,7 +12,5 @@ package com.b2mark.common.coin;
     public String getProperty();
     
     public int numberOfFloat();
-    
-    
-    
+
 }
