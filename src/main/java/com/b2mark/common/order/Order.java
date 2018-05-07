@@ -1,3 +1,13 @@
+/*******************************************************
+ * Copyright (C) 2018-2019 B2mark info@b2mark.com
+ * 
+ * This file is part of "B2mark Exchange".
+ * 
+ * "B2mark Exchange" can not be copied and/or distributed without the express
+ * permission of B2mark
+ *******************************************************/
+
+package com.b2mark.common.order;
 
 import com.b2mark.common.coin.Coin;
 import com.b2mark.common.order.utils.OrderType;
@@ -43,6 +53,7 @@ public class Order {
         return amount;
     }
 
+    @Override
     public String toString() {
         StringBuilder stringBuilder = new StringBuilder();
         stringBuilder.append("Give_Coin:").append(giveCoin.getName())
