@@ -3,7 +3,7 @@ package com.b2mark.common.coin;
 /**
  *TODO: have to change description in this project
  */
-public class Bitcoin implements Coin {
+public final class Bitcoin implements Coin {
 
     private final String name;
     private final String shortName;
