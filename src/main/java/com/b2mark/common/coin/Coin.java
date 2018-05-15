@@ -17,6 +17,7 @@
  * fixed #86
  * %20 #86
  * %30 #86 8h
+ * %30 #86 @8h
  */
 package com.b2mark.common.coin;
 
