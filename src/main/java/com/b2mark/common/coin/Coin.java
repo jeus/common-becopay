@@ -14,6 +14,7 @@
  * Check this  issusing redmine 
  * Implement feature #86 @2
  * Research feature #86 @2h
+ * fixed #86
  */
 package com.b2mark.common.coin;
 
