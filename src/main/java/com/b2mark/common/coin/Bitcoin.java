@@ -12,6 +12,7 @@ package com.b2mark.common.coin;
 /**
  * Coin is currency that work in system 
  *TODO: have to change description in this project
+ * TEst 
  */
 public final class Bitcoin implements Coin {
 
