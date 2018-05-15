@@ -16,6 +16,7 @@
  * Research feature #86 @2h
  * fixed #86
  * %20 #86
+ * %30 #86 8h
  */
 package com.b2mark.common.coin;
 
