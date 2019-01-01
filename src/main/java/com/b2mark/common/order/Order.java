@@ -9,7 +9,7 @@
 
 package com.b2mark.common.order;
 
-import com.b2mark.common.coin.Coin;
+import com.b2mark.common.coin.enums.Coin;
 import com.b2mark.common.order.utils.OrderType;
 
 /**

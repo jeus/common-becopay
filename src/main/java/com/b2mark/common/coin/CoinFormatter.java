@@ -1,6 +1,6 @@
-package com.b2mark.common;
+package com.b2mark.common.coin;
 
-import com.b2mark.common.enums.Coin;
+import com.b2mark.common.coin.enums.Coin;
 import com.b2mark.common.exceptions.ExceptionsDictionary;
 import com.b2mark.common.exceptions.PublicException;
 import org.slf4j.Logger;
@@ -86,8 +86,8 @@ public class CoinFormatter {
 
 
     public static BigInteger convrtDecimalToInt(Coin payerCoin, BigDecimal bigDecimal) {
-        BigDecimal bdminUnit = new BigDecimal(Math.pow(10, payerCoin.getMinUnit()), MathContext.DECIMAL64);
-        return bigDecimal.setScale(payerCoin.getMinUnit(), RoundingMode.UP).multiply(bdminUnit).toBigInteger();
+        BigDecimal bdminUnit = new BigDecimal(Math.pow(10, payerCoin.getLimitMiniUnit()), MathContext.DECIMAL64);
+        return bigDecimal.setScale(payerCoin.getLimitMiniUnit(), RoundingMode.UP).multiply(bdminUnit).toBigInteger();
 
     }
 
@@ -100,7 +100,7 @@ public class CoinFormatter {
 
     public static BigDecimal convrtIntToDecimal(Coin payerCoin, BigInteger bigInteger) {
         BigDecimal bigDecimalBase = new BigDecimal(bigInteger);
-        BigDecimal bdminUnit = new BigDecimal(Math.pow(10, -payerCoin.getMinUnit()), MathContext.DECIMAL64);
+        BigDecimal bdminUnit = new BigDecimal(Math.pow(10, -payerCoin.getLimitMiniUnit()), MathContext.DECIMAL64);
         return bigDecimalBase.multiply(bdminUnit);
 
     }
